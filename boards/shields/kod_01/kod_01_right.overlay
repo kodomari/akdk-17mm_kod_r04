@@ -1,4 +1,3 @@
-
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
@@ -29,11 +28,11 @@
 
         diode-direction = "col2row";
         row-gpios
-            = <&akdk_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			,<&akdk_d 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			,<&akdk_d 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&akdk_d 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			,<&akdk_d 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			,<&akdk_d 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			,<&akdk_d 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			,<&akdk_d 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			,<&akdk_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
         col-gpios
             = <&akdk_d 14 GPIO_ACTIVE_HIGH>
@@ -94,4 +93,3 @@
         irq-gpios = <&gpio0 15 GPIO_ACTIVE_LOW>;
     };
 };
-
